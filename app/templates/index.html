@@ -1,0 +1,16 @@
+<!-- payment_form.html -->
+<form action="{% url 'payment' %}" method="post">
+    {% csrf_token %}
+    <script
+      src="https://checkout.stripe.com/checkout.js" 
+      class="stripe-button"
+      data-key="{{pk_test_51MrjguSAveG28CmBkib6p95wAujJx2aA0jNFJmow6PMKtENZhza675NrmB79AXBq4aHVhoCOjAmrt6m8895pWfr000LBF7BKLf}}"
+      data-amount="1000"  
+      data-name="Example Company"
+      data-description="Example charge"
+      data-locale="auto">
+    </script>
+ 
+  
+  </form>
+  
